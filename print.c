@@ -1,10 +1,12 @@
 #include "monty.h"
+#include <stdio.h>
+
 /**
  * f_pint - prints the top
  * @head: stack head
  * @counter: line_number
  * Return: no return
-*/
+ */
 void f_pint(stack_t **head, unsigned int counter)
 {
 	if (*head == NULL)
@@ -15,6 +17,6 @@ void f_pint(stack_t **head, unsigned int counter)
 		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
+
 	printf("%d\n", (*head)->n);
 }
-
